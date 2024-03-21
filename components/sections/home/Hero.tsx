@@ -3,12 +3,12 @@ import { ScrollParallax } from "react-just-parallax";
 import Image from "next/image";
 import { useRef } from "react";
 import { BackgroundCircles, BottomLine, Gradient } from "./Design";
-import Section from "@/components/shared/Section";
 import Button from "@/components/shared/Button";
 import curve from "@/public/images/curve.png";
 import robot from "@/public/images/robot.jpg";
 import Generating from "./Generating";
 import Notification from "./Notification";
+import Section from "@/components/shared/Section";
 
 
 const Hero = () => {
@@ -26,9 +26,9 @@ const Hero = () => {
 
                 <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
                     <h1 className="h1 mb-6">
-                        The best way to predict the future is to invent it {` `}
+                        {"<"}Indulging in code creation, fueled by aromatic {` `}
                         <span className="inline-block relative">
-                            -Alan Kay{" "}
+                            coffee{" /> "}
                             <Image
                                 src={curve}
                                 className="absolute top-full left-0 w-full xl:-mt-2"
@@ -40,10 +40,9 @@ const Hero = () => {
                         </span>
                     </h1>
                     <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-                        Welcome aboard, a single programmer can't change the world, so I'm going to share everything I know.
-                    </p>
+                        "Programs must be written for people to read, and only incidentally for machines to execute." - Harold Abelson                    </p>
                     <Button href="/pricing" white>
-                        Get started
+                        Projects{"    "}
                     </Button>
                 </div>
 
