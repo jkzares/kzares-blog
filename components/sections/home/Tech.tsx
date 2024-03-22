@@ -3,15 +3,17 @@ import Button from "@/components/shared/Button";
 import Section from "@/components/shared/Section";
 import { LeftCurve, RightCurve } from "./Design";
 import brainwaveSymbol from "@/public/svg/brainwave-symbol.svg"
-import check from "@/public/svg/check.svg"
+import check from "@/public/svg/check.svg";
 import Image from "next/image";
+import kzares from "@/public/images/kzares.png";
 
 const Collaboration = () => {
   return (
-    <Section crosses>
-      <div className="container lg:flex">
+    <Section className="-mt-6">
+      <div className="container lg:flex pt-10">
         <div className="max-w-[50rem]">
-          <h2 className="h2 mb-4 md:mb-8">
+
+          <h2 className="h2 mb-4 md:mb-8 flex flex-row">
             Semi-Senior Software Developer
           </h2>
 
@@ -55,14 +57,12 @@ const Collaboration = () => {
               {collabApps.map((app, index) => (
                 <li
                   key={app.id}
-                  className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${
-                    index * 45
-                  }`}
+                  className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${index * 45
+                    }`}
                 >
                   <div
-                    className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${
-                      index * 45
-                    }`}
+                    className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${index * 45
+                      }`}
                   >
                     <Image
                       className="m-auto"

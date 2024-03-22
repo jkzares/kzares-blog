@@ -6,6 +6,7 @@ import curve2 from "@/public/svg/curve-2.svg"
 
 import PlusSvg from "@/public/svg/PlusSvg";
 import Image from "next/image";
+import gradient from "@/public/images/gradient.png"
 
 export const Gradient = () => {
   return (
@@ -116,6 +117,22 @@ export const LeftCurve = () => {
   return (
     <div className="hidden absolute top-1/2 right-full w-[32.625rem] -mt-1 mr-10 pointer-events-none xl:block">
       <Image src={curve1} width={522} height={182} alt="Curve 1" />
+    </div>
+  );
+};
+
+export const ProjectsGradient = () => {
+  return (
+    <div className="absolute top-[18.25rem] -left-[30.375rem] w-[56.625rem] opacity-60 mix-blend-color-dodge pointer-events-none">
+      <div className="absolute top-1/2 left-1/2 w-[58.85rem] h-[58.85rem] -translate-x-3/4 -translate-y-1/2">
+        <Image
+          className="w-full"
+          src={gradient}
+          width={942}
+          height={942}
+          alt="Gradient"
+        />
+      </div>
     </div>
   );
 };

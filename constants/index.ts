@@ -9,6 +9,10 @@ import docker from "@/public/images/techIcons/docker.svg"
 import postgress from "@/public/images/techIcons/postgress.svg"
 import react from "@/public/images/techIcons/react.svg"
 import github from "@/public/images/techIcons/github.svg"
+import roadmap1 from "@/public/images/projects/image-1.png";
+import roadmap2 from "@/public/images/projects/image-2.png";
+import roadmap3 from "@/public/images/projects/image-3.png";
+import roadmap4 from "@/public/images/projects/image-4.png";
 
 export const navigation = [
     {
@@ -115,5 +119,41 @@ export const collabContent = [
       icon: github,
       width: 38,
       height: 32,
+    },
+  ];
+
+  export const roadmap = [
+    {
+      id: "0",
+      title: "Voice recognition",
+      text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
+      date: "May 2023",
+      status: "done",
+      imageUrl: roadmap1,
+      colorful: true,
+    },
+    {
+      id: "1",
+      title: "Gamification",
+      text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
+      date: "May 2023",
+      status: "progress",
+      imageUrl: roadmap2,
+    },
+    {
+      id: "2",
+      title: "Chatbot customization",
+      text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
+      date: "May 2023",
+      status: "done",
+      imageUrl: roadmap3,
+    },
+    {
+      id: "3",
+      title: "Integration with APIs",
+      text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
+      date: "May 2023",
+      status: "progress",
+      imageUrl: roadmap4,
     },
   ];
