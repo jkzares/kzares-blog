@@ -40,7 +40,8 @@ const Hero = () => {
                         </span>
                     </h1>
                     <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-                        "Programs must be written for people to read, and only incidentally for machines to execute." - Harold Abelson                    </p>
+                        "Programs must be written for people to read, and only incidentally for machines to execute." - Harold Abelson
+                    </p>
                     <Button href="/pricing" white>
                         Projects{"    "}
                     </Button>

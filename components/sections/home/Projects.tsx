@@ -8,15 +8,18 @@ import grid from "@/public/images/grid.png"
 import Image from "next/image";
 import loading1 from "@/public/svg/loading-01.svg"
 import check2 from "@/public/svg/check-02.svg"
+import projects from "@/constants/projects";
+import Link from "next/link";
 
-const Projects = () => (
-    <Section className="overflow-hidden" id="roadmap">
+const Projects = () => {    
+
+    return <Section className="overflow-hidden" id="roadmap">
         <div className="container md:pb-10">
             <Heading tag="Ready to get started" title="What we’re working on" />
 
             <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
 
-                {roadmap.map((item: any) => {
+                {projects.map((item: any) => {
                     const status = item.status === "done" ? "Done" : "In progress";
 
                     return (
@@ -52,21 +55,24 @@ const Projects = () => (
                                         </div>
                                     </div>
 
-                                    <div className="mb-10 -my-10 -mx-15">
+                                    <div className="mb-10 -my-10 -mx-15 px-5  overflow-hidden my-5">
                                         <Image
-                                            className="w-full"
-                                            src={item.imageUrl}
+                                            className="w-full rounded-xl"
+                                            src={item.portrait}
                                             width={628}
                                             height={426}
                                             alt={item.title}
                                         />
                                     </div>
                                     <h4 className="h4 mb-4">{item.title}</h4>
-                                    <p className="body-2 text-n-4">{item.text}</p>
+                                    <a target="blank" href={`${item.url}`} className="relative z-10 mb-4 font-light text-color-1">{item.url}</a>
+                                    <p className="body-2 text-n-4">{item.description}</p>
+                                    <Button href={`/project/${item.id}`} className="my-3" white>Visit</Button>
                                 </div>
 
                             </div>
-                        </div>
+                        </div>                       
+
                     );
                 })}
 
@@ -76,6 +82,6 @@ const Projects = () => (
             </div>
         </div>
     </Section>
-);
+};
 
 export default Projects;
