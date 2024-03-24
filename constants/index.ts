@@ -13,6 +13,11 @@ import roadmap1 from "@/public/images/projects/image-1.png";
 import roadmap2 from "@/public/images/projects/image-2.png";
 import roadmap3 from "@/public/images/projects/image-3.png";
 import roadmap4 from "@/public/images/projects/image-4.png";
+import discordBlack from "@/public/socials/discord.svg"
+import twitter from "@/public/socials/twitter.svg"
+import facebook from "@/public/socials/facebook.svg"
+import instagram from "@/public/socials/instagram.svg"
+import telegram from "@/public/socials/telegram.svg"
 
 export const navigation = [
     {
@@ -157,3 +162,37 @@ export const collabContent = [
       imageUrl: roadmap4,
     },
   ];
+
+  export const socials = [
+    {
+      id: "0",
+      title: "Discord",
+      iconUrl: discordBlack,
+      url: "#",
+    },
+    {
+      id: "1",
+      title: "Twitter",
+      iconUrl: twitter,
+      url: "#",
+    },
+    {
+      id: "2",
+      title: "Instagram",
+      iconUrl: instagram,
+      url: "#",
+    },
+    {
+      id: "3",
+      title: "Telegram",
+      iconUrl: telegram,
+      url: "#",
+    },
+    {
+      id: "4",
+      title: "Facebook",
+      iconUrl: facebook,
+      url: "#",
+    },
+  ];
+  

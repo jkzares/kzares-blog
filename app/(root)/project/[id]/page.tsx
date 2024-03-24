@@ -28,17 +28,17 @@ const Project = async ({ params }: { params: { id: string } }) => {
 
                 <Heading tag={`Case study no ${project.id}`} title={project?.title} />
 
-                {project.content.map((data: { picture: boolean, text?: string, url?: string }) => {
+                {project.content.map((data: { picture: boolean, text?: string, url?: string }, index: number) => {
 
                     if (data.picture) {
                         return (
-                            <div className="relative w-full my-4 mx-auto md:max-w-5xl xl:mb-24">
+                            <div key={index} className="relative w-full my-4 mx-auto md:max-w-5xl xl:mb-24">
                                 <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
                                     <div className="relative bg-n-8 rounded-[1rem] overflow-hidden ">
 
                                         <div>
                                             <Image
-                                                src={data.url}
+                                                src={data.url || ""}
                                                 className="w-full "
                                                 width={1024}
                                                 height={490}
@@ -52,7 +52,7 @@ const Project = async ({ params }: { params: { id: string } }) => {
                         )
                     } else {
                         return (
-                            <p className="body-1 max-w-4xl mx-auto mb-6 text-n-2 lg:mb-8">
+                            <p key={index} className="body-1 max-w-4xl mx-auto mb-6 text-n-2 lg:mb-8">
                                 "{data.text}"
                             </p>
                         )
