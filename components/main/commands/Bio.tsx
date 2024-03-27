@@ -1,47 +1,37 @@
 import { GoVerified } from "react-icons/go";
-import { SiGithub, SiPatreon, SiYoutube } from "react-icons/si";
+import { SiGithub } from "react-icons/si";
+import Image from "next/image";
+import profilePic from "@/public/images/kzares-pic.png"
 
 export default function Bio() {
 	const links = [
 		{
 			title: "Github",
 			Icon: SiGithub,
-			href: "https://github.com/Chensokheng",
-			text: "@Chensokheng",
+			href: "https://github.com/kzares-dev",
+			text: "@kzares-dev",
 		},
-		{
-			title: "Youtube",
-			Icon: SiYoutube,
-			href: "https://www.youtube.com/c/DailyWebCoding",
-			text: "@Dailywebcoding",
-		},
-		{
-			title: "Patreon",
-			Icon: SiPatreon,
-			href: "https://www.patreon.com/dailywebcoding",
-			text: "@Patreon",
-		},
+		
 	];
 	return (
 		<div className="mt-2 mb-2 w-11/12 mx-auto">
 			<div className="flex items-center gap-3 mb-3 ">
-				<img
-					src="https://avatars.githubusercontent.com/u/52232579?s=400&u=66d824859d14da9ffc4dcb32f3aca6631abb95af&v=4"
-					alt="Chensokheng"
-					className="w-40 h-40 rounded-full border-2 border-yellow-200"
+				<Image
+					src={profilePic}
+					alt=""
+					className="w-40 h-40 object-cover rounded-full border-2 border-yellow-200"
 				/>
 				<div>
 					<div className="flex items-center gap-1">
-						<h1 className="text-2xl">Chensokheng</h1>
+						<h1 className="text-2xl">Jorge A. Casares</h1>
 						<GoVerified className="text-blue-500 text-2xl" />
 					</div>
-					<p className="text-lg text-gray-400">Join the world 22 years ago.</p>
+					<p className="text-lg text-gray-400">Join the world { new Date().getFullYear() - 2004 } years ago.</p>
 				</div>
 			</div>
 			<p>
-				Hi there, I am a software developer/youtuber. Passionate with web
-				development and like to learn new thing related to coding and sharing it
-				to the internet through my youtube.
+			Hello! 🌟 As a dynamic developer well-versed in a spectrum of backend and frontend technologies, I seamlessly navigate the realms of software creation. My proficiency extends to the cloud domain, specifically Azure, where I harness the power of cloud computing to craft innovative solutions. With a wealth of experience in seamless integration and the orchestration of continuous development and integration practices, I thrive in the ever-evolving landscape of technology. I'm fueled by a passion for crafting robust and scalable systems that not only meet but exceed expectations 💻✨	
+
 			</p>
 			<div className="grid grid-cols-2">
 				{links.map(({ Icon, text, href, title }, index) => {

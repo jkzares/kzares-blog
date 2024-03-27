@@ -16,7 +16,7 @@ export default function TerminalBox() {
 			time: new Date().toLocaleTimeString(),
 		},
 		{
-			cmd: "ls",
+			cmd: "help",
 			Component: Help,
 			time: new Date().toLocaleTimeString(),
 		},

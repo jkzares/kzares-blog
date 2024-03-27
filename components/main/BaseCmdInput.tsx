@@ -16,7 +16,7 @@ export default function BaseCmdInput({
 				<div className="w-5 h-1 bg-blue-600"></div>
 				<div className="flex gap-1 items-center bg-green-700 pl-2">
 					<GiClover />
-					<h1>chensokheng</h1>
+					<h1>kzares</h1>
 				</div>
 				<div
 					className=" w-5 h-7 bg-green-700 z-20"

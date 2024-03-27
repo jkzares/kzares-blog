@@ -1,4 +1,3 @@
-import About from "@/components/main/commands/About";
 import Bio from "@/components/main/commands/Bio";
 import Contact from "@/components/main/commands/Contact";
 import Help from "@/components/main/commands/Help";
@@ -9,7 +8,7 @@ import { CmdHistory } from "@/types";
 
 function renderCmd(cmd: string): CmdHistory {
 	switch (cmd) {
-		case "ls":
+		case "help":
 			return {
 				cmd,
 				Component: Help,
@@ -33,13 +32,7 @@ function renderCmd(cmd: string): CmdHistory {
 				Component: Contact,
 				time: "",
 			};
-		case "about": {
-			return {
-				cmd,
-				Component: About,
-				time: "",
-			};
-		}
+		
 		default:
 			return {
 				cmd,
